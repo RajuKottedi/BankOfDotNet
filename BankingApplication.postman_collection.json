@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "95e47be8-2a80-4876-a23b-dfaaa7487112",
+		"name": "BankingApplication",
+		"description": "BankOfDotNet Web API\n\nEndpoints:\n\nGetAllCustomers api/Customers\nGetSpecificCustomer api/Customer/3\nUpdateCustomer api/Customer/3 PUT CustomerObject\nCreateCustomer api/Customer POST CustomerObject\nDeleteCustomer api/Customer/3 DELETE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:13600/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "13600",
+					"path": [
+						"api",
+						"customers"
+					]
+				},
+				"description": "Get All Customers"
+			},
+			"response": []
+		},
+		{
+			"name": "GET Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:13600/api/customers/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "13600",
+					"path": [
+						"api",
+						"customers",
+						"3"
+					]
+				},
+				"description": "Get All Customers"
+			},
+			"response": []
+		},
+		{
+			"name": "POST Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"firstName\": \"Sreekanth\",\r\n    \"lastName\": \"Gunti\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:13600/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "13600",
+					"path": [
+						"api",
+						"customers"
+					]
+				},
+				"description": "Get All Customers"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT Customer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 5,\r\n    \"firstName\": \"Sreekanth Updated\",\r\n    \"lastName\": \"Gunti\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:13600/api/customers/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "13600",
+					"path": [
+						"api",
+						"customers",
+						"5"
+					]
+				},
+				"description": "Get All Customers"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Customer",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:13600/api/customers/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "13600",
+					"path": [
+						"api",
+						"customers",
+						"3"
+					]
+				},
+				"description": "Get All Customers"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "7f999674-6030-4de9-994a-8a2d884345d1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "210c293c-711c-4fda-b5c1-2834d0825d40",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
