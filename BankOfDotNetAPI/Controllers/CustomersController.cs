@@ -6,9 +6,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using BankOfDotNetAPI.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BankOfDotNetAPI.Controllers
 {
+    [Authorize]
     [Route("api/customers")]
     [ApiController]
     public class CustomersController : ControllerBase
